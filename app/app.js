@@ -25,6 +25,11 @@ App.fn.load = function(){
 
   if (value = localStorage.dob)
     this.dob = new Date(parseInt(value));
+
+  this.wallpapers = ["https://files.yande.re/image/480bcbf01858255f66bf52125e77ace1/yande.re%20266260%20hatsune_miku%20landscape%20rella%20vocaloid.jpg"];
+  this.wallpaper = this.wallpapers[0];
+  console.log($$('body')[0])
+  $$('body')[0].style.backgroundImage = 'url(' + this.wallpaper + ')';
 };
 
 App.fn.save = function(){

@@ -21,6 +21,9 @@ body {
   -webkit-flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -webkit-justify-content: center;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
 }
 
 body, input {
@@ -29,18 +32,20 @@ body, input {
 }
 
 .age-label {
-  color: #B0B5B9;
+  color: #FFFFFF;
   font-size: 1.2rem;
   line-height: 1;
   margin: 0 0 0 2px;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .count {
-  color: #494949;
+  color: #FFFFFF;
   margin: 0;
   font-size: 6rem;
   line-height: 1;
   font-weight: 600;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .count sup {
