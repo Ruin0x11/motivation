@@ -14,24 +14,31 @@
 
 <script id="dob-template" type="text/x-handlebars-template">
   <form>
-    <h1 id="dob" class="age-label">When were you born?</h1>
+    <h1 id="dob" class="age-label">お誕生日はいつですか？</h1>
 
     <footer>
       <input type="date" name="dob" id="dob">
-      <button type="submit">Motivate</button>
+      <button type="submit">励ます</button>
     </footer>
   <form>
 </script>
 
 <script id="age-template" type="text/x-handlebars-template">
-  <h1 class="age-label">AGE</h1>
+  <h1 class="age-label">年齢</h1>
   <h2 class="count">{{year}}<sup>.{{milliseconds}}</sup></h2>
 </script>
+
+<div class="motivator">
+    <h3 class="motivator-body"></h3>
+    <h4 class="motivator-author"></h3>
+    <div class="bar"></div>
+</div>
 
 <a href="options.html" class="settings">Settings</a>
 
 <script src="js/handlebars.js"></script>
 <script src="app/app.js"></script>
+<script src="motivators.js"></script>
 
 </body>
 </html>
